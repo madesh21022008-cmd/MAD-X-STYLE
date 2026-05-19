@@ -161,8 +161,10 @@ newsletterForm.addEventListener('submit', (e) => {
     
     const email = newsletterForm.querySelector('input[type="email"]').value;
     
-    // Simple validation
-    if (email && email.includes('@')) {
+    // Proper email validation using HTML5 constraint validation API
+    const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    
+    if (isValidEmail) {
         // Show success message
         const btn = newsletterForm.querySelector('.newsletter-btn');
         const originalText = btn.textContent;
@@ -225,13 +227,13 @@ window.addEventListener('scroll', () => {
 if ('IntersectionObserver' in window) {
     const images = document.querySelectorAll('[data-src]');
     
-    const imageObserver = new IntersectionObserver((entries, observer) => {
+    const imageObserver = new IntersectionObserver((entries, imageObserver) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const img = entry.target;
                 img.src = img.getAttribute('data-src');
                 img.removeAttribute('data-src');
-                observer.unobserve(img);
+                imageObserver.unobserve(img);
             }
         });
     });
