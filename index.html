@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAD X STYLE - Luxury Streetwear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER / NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <span class="logo-text">MAD X STYLE</span>
+            </div>
+            <nav class="navbar-menu" id="navbar-menu">
+                <a href="#home" class="navbar-link">Home</a>
+                <a href="#collections" class="navbar-link">Collections</a>
+                <a href="#new-arrivals" class="navbar-link">New Drops</a>
+                <a href="#lookbook" class="navbar-link">Lookbook</a>
+                <a href="#contact" class="navbar-link">Contact</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Luxury Meets Streetwear</h1>
+            <p class="hero-subtitle">Elevate Your Style. Define Your Identity.</p>
+        </div>
+    </section>
+
+    <!-- COLLECTION SECTION -->
+    <section class="collections" id="collections">
+        <div class="section-header">
+            <h2 class="section-title">Our Collections</h2>
+            <p class="section-subtitle">Curated Luxury Streetwear</p>
+        </div>
+        <div class="collection-grid">
+            <div class="collection-card">
+                <div class="collection-image" style="background: linear-gradient(135deg, #2a2a2a 0%, #0B0B0B 100%); position: relative; overflow: hidden;">
+                    <div class="collection-overlay"></div>
+                    <span class="collection-tag">Hoodies</span>
+                </div>
+                <div class="collection-info">
+                    <h3>Premium Hoodies</h3>
+                    <p>Comfort meets luxury in our signature collection</p>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image" style="background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%); position: relative; overflow: hidden;">
+                    <div class="collection-overlay"></div>
+                    <span class="collection-tag">Streetwear</span>
+                </div>
+                <div class="collection-info">
+                    <h3>Urban Streetwear</h3>
+                    <p>Bold designs for the modern rebel</p>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image" style="background: linear-gradient(135deg, #2a2a2a 0%, #0B0B0B 100%); position: relative; overflow: hidden;">
+                    <div class="collection-overlay"></div>
+                    <span class="collection-tag">Jackets</span>
+                </div>
+                <div class="collection-info">
+                    <h3>Statement Jackets</h3>
+                    <p>Timeless pieces with contemporary edge</p>
+                </div>
+            </div>
+
+            <div class="collection-card">
+                <div class="collection-image" style="background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%); position: relative; overflow: hidden;">
+                    <div class="collection-overlay"></div>
+                    <span class="collection-tag">Baggies</span>
+                </div>
+                <div class="collection-info">
+                    <h3>Relaxed Baggies</h3>
+                    <p>Oversized comfort with minimal aesthetic</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW ARRIVALS SECTION -->
+    <section class="new-arrivals" id="new-arrivals">
+        <div class="section-header">
+            <h2 class="section-title">New Arrivals</h2>
+            <p class="section-subtitle">Fresh Drops Every Week</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-image" style="background: linear-gradient(135deg, #2a2a2a 0%, #0B0B0B 100%);"></div>
+                    <button class="wishlist-btn" data-product="1">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Luxury Oversized Tee</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(128)</span>
+                    </div>
+                    <p class="product-price">$89.99</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-image" style="background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%);"></div>
+                    <button class="wishlist-btn" data-product="2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Premium Hoodie</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(92)</span>
+                    </div>
+                    <p class="product-price">$129.99</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-image" style="background: linear-gradient(135deg, #2a2a2a 0%, #0B0B0B 100%);"></div>
+                    <button class="wishlist-btn" data-product="3">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cargo Jacket</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(76)</span>
+                    </div>
+                    <p class="product-price">$159.99</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-image" style="background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%);"></div>
+                    <button class="wishlist-btn" data-product="4">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Relaxed Pants</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(154)</span>
+                    </div>
+                    <p class="product-price">$99.99</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-image" style="background: linear-gradient(135deg, #2a2a2a 0%, #0B0B0B 100%);"></div>
+                    <button class="wishlist-btn" data-product="5">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Vintage Bomber</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(203)</span>
+                    </div>
+                    <p class="product-price">$144.99</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <div class="product-image" style="background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%);"></div>
+                    <button class="wishlist-btn" data-product="6">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Statement Cap</h3>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(67)</span>
+                    </div>
+                    <p class="product-price">$49.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND STATEMENT SECTION -->
+    <section class="brand-statement">
+        <div class="brand-statement-content">
+            <div class="brand-statement-text">
+                <h2 class="brand-title">MAD X STYLE</h2>
+                <p class="brand-description">
+                    is more than fashion.
+                </p>
+                <p class="brand-description bold">
+                    It's identity, confidence,<br>and rebellion.
+                </p>
+                <div class="brand-stats">
+                    <div class="stat-item">
+                        <p class="stat-number" data-target="500000">0</p>
+                        <p class="stat-label">+ Happy Customers</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number" data-target="2000">0</p>
+                        <p class="stat-label">+ Premium Designs</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number" data-target="50">0</p>
+                        <p class="stat-label">+ Countries Shipping</p>
+                    </div>
+                </div>
+            </div>
+            <div class="brand-statement-image" style="background: linear-gradient(135deg, #C9A96E 0%, #8B7355 100%);"></div>
+        </div>
+    </section>
+
+    <!-- LOOKBOOK SECTION -->
+    <section class="lookbook" id="lookbook">
+        <div class="section-header">
+            <h2 class="section-title">Lookbook</h2>
+            <p class="section-subtitle">Editorial & Style Inspiration</p>
+        </div>
+        <div class="gallery-masonry">
+            <div class="gallery-item large">
+                <div class="gallery-image" style="background: linear-gradient(135deg, #C9A96E 0%, #8B7355 100%);"></div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Summer Collection</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image" style="background: linear-gradient(135deg, #2a2a2a 0%, #0B0B0B 100%);"></div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Urban Vibes</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image" style="background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%);"></div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Street Style</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image" style="background: linear-gradient(135deg, #2a2a2a 0%, #0B0B0B 100%);"></div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Winter Drops</p>
+                </div>
+            </div>
+            <div class="gallery-item large">
+                <div class="gallery-image" style="background: linear-gradient(135deg, #8B7355 0%, #C9A96E 100%);"></div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Premium Line</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image" style="background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%);"></div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Casual Wear</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Trusted by Fashion Enthusiasts Worldwide</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"MAD X STYLE represents exactly what I was looking for - luxury with an edge. The quality is unmatched and the designs are absolutely fire!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar" style="background: linear-gradient(135deg, #C9A96E 0%, #8B7355 100%);"></div>
+                    <div>
+                        <p class="author-name">Alex Johnson</p>
+                        <p class="author-role">Fashion Influencer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"The attention to detail in every piece is incredible. This is the kind of streetwear that makes you feel confident and unique."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar" style="background: linear-gradient(135deg, #2a2a2a 0%, #0B0B0B 100%);"></div>
+                    <div>
+                        <p class="author-name">Jordan Smith</p>
+                        <p class="author-role">Style Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Finally found a brand that understands luxury streetwear. Every drop is an event, and the quality justifies the investment."</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar" style="background: linear-gradient(135deg, #3a3a3a 0%, #1a1a1a 100%);"></div>
+                    <div>
+                        <p class="author-name">Taylor Morgan</p>
+                        <p class="author-role">Brand Curator</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"MAD X STYLE is not just clothing - it's a statement. I wear it with pride and confidence. Highly recommended!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar" style="background: linear-gradient(135deg, #8B7355 0%, #C9A96E 100%);"></div>
+                    <div>
+                        <p class="author-name">Casey Williams</p>
+                        <p class="author-role">Street Artist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION -->
+    <section class="newsletter" id="contact">
+        <div class="newsletter-content">
+            <h2 class="newsletter-title">Stay Updated</h2>
+            <p class="newsletter-subtitle">Subscribe to get exclusive drops and early access</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+            <p class="newsletter-note">We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MAD X STYLE</h3>
+                <p>Luxury meets streetwear. Define your identity.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2s9 5 20 5a9.5 9.5 0 0 0-9-5.5c4.75 2.25 7-7 7-7"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#new-arrivals">New Drops</a></li>
+                    <li><a href="#lookbook">Lookbook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MAD X STYLE. All rights reserved. | Luxury Streetwear Brand</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
