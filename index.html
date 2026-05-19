@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAD X STYLE | Clothing Brand</title>
+    <meta
+      name="description"
+      content="MAD X STYLE — modern clothing brand with bold streetwear essentials."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home">MAD X STYLE</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">
+        Menu
+      </button>
+      <nav id="nav-menu" class="site-nav">
+        <a href="#collections">Collections</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <p class="tag">New Season / 2026</p>
+        <h1>Own Your Street Style.</h1>
+        <p>
+          Premium everyday fits made for confidence, comfort, and movement.
+        </p>
+        <div class="hero-actions">
+          <a href="#collections" class="btn btn-primary">Shop Collection</a>
+          <a href="#about" class="btn btn-secondary">Our Story</a>
+        </div>
+      </section>
+
+      <section id="collections" class="section">
+        <div class="section-head">
+          <h2>Featured Collections</h2>
+          <p>Carefully crafted pieces for every vibe.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Urban Essentials</h3>
+            <p>Minimal tees, oversized hoodies, and daily staples.</p>
+          </article>
+          <article class="card">
+            <h3>Sport Luxe</h3>
+            <p>Activewear-inspired fits blending performance and design.</p>
+          </article>
+          <article class="card">
+            <h3>Night Edit</h3>
+            <p>Bold jackets and statement pieces for after-dark looks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div>
+          <h2>About MAD X STYLE</h2>
+          <p>
+            We create modern fashion for creators, dreamers, and everyday trend
+            setters. Our mission is to merge timeless comfort with a fearless,
+            contemporary edge.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-head">
+          <h2>Stay in the Loop</h2>
+          <p>Get updates on drops, offers, and style tips.</p>
+        </div>
+        <form id="newsletter-form" class="newsletter-form">
+          <label for="email" class="sr-only">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 MAD X STYLE. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
