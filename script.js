@@ -14,11 +14,16 @@ if (menuToggle && siteNav) {
 if (newsletterForm && formMessage) {
   newsletterForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    const formData = new FormData(newsletterForm);
-    const email = (formData.get("email") || "").toString().trim();
+    const emailInput = newsletterForm.querySelector("#email");
+    const email = (emailInput?.value || "").trim();
 
     if (!email) {
-      formMessage.textContent = "Please enter a valid email.";
+      formMessage.textContent = "Please enter an email address.";
+      return;
+    }
+
+    if (emailInput && !emailInput.checkValidity()) {
+      formMessage.textContent = "Please enter a valid email address.";
       return;
     }
 
